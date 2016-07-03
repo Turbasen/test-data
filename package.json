@@ -4,6 +4,7 @@
   "description": "Test data for internal Nasjonal Turbase API development",
   "main": "index.js",
   "files": [
+    "data",
     "index.js"
   ],
   "scripts": {
