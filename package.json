@@ -1,0 +1,53 @@
+{
+  "name": "@turbasen/test-data",
+  "version": null,
+  "description": "Test data for internal Nasjonal Turbase API development",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "codacy-coverage": "codacy-coverage",
+    "cover": "istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- -R spec test.js",
+    "grunt:watch": "grunt watch",
+    "lint": "eslint index.js test.js",
+    "nsp": "nsp check",
+    "semantic-release": "semantic-release",
+    "test": "mocha -R tap -b --check-leaks test.js",
+    "test:watch": "mocha -R progress -b --check-leaks -w test.js",
+    "greenkeeper-postpublish": "greenkeeper-postpublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Turbasen/test-data.git"
+  },
+  "keywords": [
+    "nasjonal turbase",
+    "turbasen",
+    "test",
+    "data"
+  ],
+  "author": "Hans Kristian Flaatten <hans@starefossen.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Turbasen/test-data/issues"
+  },
+  "homepage": "https://github.com/Turbasen/test-data#readme",
+  "dependencies": {
+    "mongodb": "^2.1.18"
+  },
+  "devDependencies": {
+    "codacy-coverage": "^1.1.3",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.10.0",
+    "greenkeeper-postpublish": "^1.0.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "nsp": "^2.5.0",
+    "semantic-release": "^4.3.5"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}

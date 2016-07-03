@@ -20,6 +20,14 @@ Run in this directory:
 $ docker-compose up
 ```
 
+## Usage
+
+### api.users
+
+```js
+const users = require('@turbasen/test-data').api.users;
+```
+
 Docker is now watching for changes and will run the test suite automatically.
 
 ## [MIT lisenced](https://github.com/Turbasen/test-data/blob/master/LICENSE)
